@@ -1,0 +1,54 @@
+.widget {
+  background: #1e293b;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #334155;
+}
+.widget-header h3 { font-size: 1rem; }
+.widget-controls button {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+.widget-body { padding: 1rem; flex: 1; }
+.widget.minimized .widget-body { display: none; }
+
+/* Match list */
+.match-list { list-style: none; }
+.match-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #334155;
+  font-size: 0.9rem;
+}
+.match-score { font-weight: bold; color: #fbbf24; }
+
+/* ToDo */
+.todo-input-row { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; }
+.todo-input { flex: 1; padding: 0.4rem; border-radius: 6px; border: 1px solid #475569; background: #0f172a; color: white; }
+.todo-list { list-style: none; }
+.todo-list li { display: flex; justify-content: space-between; padding: 0.4rem 0; border-bottom: 1px solid #334155; }
+.todo-list li.done .task-text { text-decoration: line-through; color: #64748b; }
+.btn-del { background: transparent; border: none; color: #ef4444; cursor: pointer; }
+
+/* Crypto */
+.crypto-display { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.coin-price { font-size: 1.5rem; font-weight: bold; }
+.coin-price .up { color: #22c55e; font-size: 0.9rem; }
+.coin-price .down { color: #ef4444; font-size: 0.9rem; }
+
+/* Quote */
+.quote-text { font-style: italic; margin-bottom: 1rem; line-height: 1.5; }
